@@ -1,0 +1,141 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From FanXin2.0:
+* proguard-project.txt
+From fresco_0.8.1:
+* ic_launcher-web.png
+* proguard-project.txt
+From library:
+* LICENSE
+* pom.xml
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:23.2.1
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In fresco_0.8.1:
+* AndroidManifest.xml => fresco_081\src\main\AndroidManifest.xml
+* libs\annotations-3.0.0.jar => fresco_081\libs\annotations-3.0.0.jar
+* libs\arm64-v8a\libbitmaps.so => fresco_081\src\main\jniLibs\arm64-v8a\libbitmaps.so
+* libs\arm64-v8a\libgifimage.so => fresco_081\src\main\jniLibs\arm64-v8a\libgifimage.so
+* libs\arm64-v8a\libimagepipeline.so => fresco_081\src\main\jniLibs\arm64-v8a\libimagepipeline.so
+* libs\arm64-v8a\libmemchunk.so => fresco_081\src\main\jniLibs\arm64-v8a\libmemchunk.so
+* libs\arm64-v8a\libwebp.so => fresco_081\src\main\jniLibs\arm64-v8a\libwebp.so
+* libs\arm64-v8a\libwebpimage.so => fresco_081\src\main\jniLibs\arm64-v8a\libwebpimage.so
+* libs\armeabi-v7a\libbitmaps.so => fresco_081\src\main\jniLibs\armeabi-v7a\libbitmaps.so
+* libs\armeabi-v7a\libgifimage.so => fresco_081\src\main\jniLibs\armeabi-v7a\libgifimage.so
+* libs\armeabi-v7a\libimagepipeline.so => fresco_081\src\main\jniLibs\armeabi-v7a\libimagepipeline.so
+* libs\armeabi-v7a\libmemchunk.so => fresco_081\src\main\jniLibs\armeabi-v7a\libmemchunk.so
+* libs\armeabi-v7a\libwebp.so => fresco_081\src\main\jniLibs\armeabi-v7a\libwebp.so
+* libs\armeabi-v7a\libwebpimage.so => fresco_081\src\main\jniLibs\armeabi-v7a\libwebpimage.so
+* libs\armeabi\libbitmaps.so => fresco_081\src\main\jniLibs\armeabi\libbitmaps.so
+* libs\armeabi\libgifimage.so => fresco_081\src\main\jniLibs\armeabi\libgifimage.so
+* libs\armeabi\libimagepipeline.so => fresco_081\src\main\jniLibs\armeabi\libimagepipeline.so
+* libs\armeabi\libmemchunk.so => fresco_081\src\main\jniLibs\armeabi\libmemchunk.so
+* libs\armeabi\libwebp.so => fresco_081\src\main\jniLibs\armeabi\libwebp.so
+* libs\armeabi\libwebpimage.so => fresco_081\src\main\jniLibs\armeabi\libwebpimage.so
+* libs\bolts-android-1.1.4.jar => fresco_081\libs\bolts-android-1.1.4.jar
+* libs\library-nineoldandroids-2.4.0.jar => fresco_081\libs\library-nineoldandroids-2.4.0.jar
+* libs\okhttp-2.3.0.jar => fresco_081\libs\okhttp-2.3.0.jar
+* libs\volley_library-1.0.18.jar => fresco_081\libs\volley_library-1.0.18.jar
+* libs\x86\libbitmaps.so => fresco_081\src\main\jniLibs\x86\libbitmaps.so
+* libs\x86\libgifimage.so => fresco_081\src\main\jniLibs\x86\libgifimage.so
+* libs\x86\libimagepipeline.so => fresco_081\src\main\jniLibs\x86\libimagepipeline.so
+* libs\x86\libmemchunk.so => fresco_081\src\main\jniLibs\x86\libmemchunk.so
+* libs\x86\libwebp.so => fresco_081\src\main\jniLibs\x86\libwebp.so
+* libs\x86\libwebpimage.so => fresco_081\src\main\jniLibs\x86\libwebpimage.so
+* libs\x86_64\libbitmaps.so => fresco_081\src\main\jniLibs\x86_64\libbitmaps.so
+* libs\x86_64\libgifimage.so => fresco_081\src\main\jniLibs\x86_64\libgifimage.so
+* libs\x86_64\libimagepipeline.so => fresco_081\src\main\jniLibs\x86_64\libimagepipeline.so
+* libs\x86_64\libmemchunk.so => fresco_081\src\main\jniLibs\x86_64\libmemchunk.so
+* libs\x86_64\libwebp.so => fresco_081\src\main\jniLibs\x86_64\libwebp.so
+* libs\x86_64\libwebpimage.so => fresco_081\src\main\jniLibs\x86_64\libwebpimage.so
+* res\ => fresco_081\src\main\res\
+* src\ => fresco_081\src\main\java\
+* src\com\facebook\common\internal\proguard_annotations.pro => fresco_081\src\main\resources\com\facebook\common\internal\proguard_annotations.pro
+* src\com\facebook\common\logging\logging.pro => fresco_081\src\main\resources\com\facebook\common\logging\logging.pro
+In library:
+* AndroidManifest.xml => library\src\main\AndroidManifest.xml
+* res\ => library\src\main\res\
+* src\ => library\src\main\java\
+In FanXin2.0:
+* AndroidManifest.xml => fanXin20\src\main\AndroidManifest.xml
+* libs\alipaySDK-20150818.jar => fanXin20\libs\alipaySDK-20150818.jar
+* libs\arm64-v8a\libBaiduMapSDK_v3_2_0_15.so => fanXin20\src\main\jniLibs\arm64-v8a\libBaiduMapSDK_v3_2_0_15.so
+* libs\arm64-v8a\libBugly.so => fanXin20\src\main\jniLibs\arm64-v8a\libBugly.so
+* libs\arm64-v8a\libeasemob_jni.so => fanXin20\src\main\jniLibs\arm64-v8a\libeasemob_jni.so
+* libs\arm64-v8a\libeasemobservice.so => fanXin20\src\main\jniLibs\arm64-v8a\libeasemobservice.so
+* libs\arm64-v8a\liblocSDK5.so => fanXin20\src\main\jniLibs\arm64-v8a\liblocSDK5.so
+* libs\armeabi-v7a\libBaiduMapSDK_v3_2_0_15.so => fanXin20\src\main\jniLibs\armeabi-v7a\libBaiduMapSDK_v3_2_0_15.so
+* libs\armeabi-v7a\libBugly.so => fanXin20\src\main\jniLibs\armeabi-v7a\libBugly.so
+* libs\armeabi-v7a\liblocSDK5.so => fanXin20\src\main\jniLibs\armeabi-v7a\liblocSDK5.so
+* libs\armeabi\libBaiduMapSDK_v3_2_0_15.so => fanXin20\src\main\jniLibs\armeabi\libBaiduMapSDK_v3_2_0_15.so
+* libs\armeabi\libBugly.so => fanXin20\src\main\jniLibs\armeabi\libBugly.so
+* libs\armeabi\libeasemob_jni.so => fanXin20\src\main\jniLibs\armeabi\libeasemob_jni.so
+* libs\armeabi\libeasemobservice.so => fanXin20\src\main\jniLibs\armeabi\libeasemobservice.so
+* libs\armeabi\liblocSDK5.so => fanXin20\src\main\jniLibs\armeabi\liblocSDK5.so
+* libs\baidumapapi_v3_2_0.jar => fanXin20\libs\baidumapapi_v3_2_0.jar
+* libs\bugly_1.2.9_release.jar => fanXin20\libs\bugly_1.2.9_release.jar
+* libs\easemobchat_2.2.5.jar => fanXin20\libs\easemobchat_2.2.5.jar
+* libs\fastjson-1.2.5.jar => fanXin20\libs\fastjson-1.2.5.jar
+* libs\locSDK_5.3.jar => fanXin20\libs\locSDK_5.3.jar
+* libs\mips64\libBaiduMapSDK_v3_2_0_15.so => fanXin20\src\main\jniLibs\mips64\libBaiduMapSDK_v3_2_0_15.so
+* libs\mips64\liblocSDK5.so => fanXin20\src\main\jniLibs\mips64\liblocSDK5.so
+* libs\mips\libBaiduMapSDK_v3_2_0_15.so => fanXin20\src\main\jniLibs\mips\libBaiduMapSDK_v3_2_0_15.so
+* libs\mips\liblocSDK5.so => fanXin20\src\main\jniLibs\mips\liblocSDK5.so
+* libs\universal-image-loader-1.9.3-with-sources.jar => fanXin20\libs\universal-image-loader-1.9.3-with-sources.jar
+* libs\x86\libBaiduMapSDK_v3_2_0_15.so => fanXin20\src\main\jniLibs\x86\libBaiduMapSDK_v3_2_0_15.so
+* libs\x86\libBugly.so => fanXin20\src\main\jniLibs\x86\libBugly.so
+* libs\x86\libeasemobservice.so => fanXin20\src\main\jniLibs\x86\libeasemobservice.so
+* libs\x86\liblocSDK5.so => fanXin20\src\main\jniLibs\x86\liblocSDK5.so
+* libs\x86_64\libBaiduMapSDK_v3_2_0_15.so => fanXin20\src\main\jniLibs\x86_64\libBaiduMapSDK_v3_2_0_15.so
+* libs\x86_64\libBugly.so => fanXin20\src\main\jniLibs\x86_64\libBugly.so
+* libs\x86_64\libeasemobservice.so => fanXin20\src\main\jniLibs\x86_64\libeasemobservice.so
+* libs\x86_64\liblocSDK5.so => fanXin20\src\main\jniLibs\x86_64\liblocSDK5.so
+* lint.xml => fanXin20\lint.xml
+* res\ => fanXin20\src\main\res\
+* src\ => fanXin20\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
